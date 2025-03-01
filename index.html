@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>church web site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navigation_desktop">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li class="listItem"><a href="#">A propos</a></li>
+                <li class="listItem"><a href="#">Services</a></li>
+                <li class="listItem"><a href="#">Programmes</a></li>
+                <li class="listItem"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="openMenu"><i class="fa-solid fa-bars"></i></a>
+        <!--------la navigation mobile---------->
+        <nav class="navigation_mobile">
+            <ul>
+                <li><a href="#" class="closeMenu"><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Programmes</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <!-------------------------------->
+        <div class="fondAccueil">
+            <div class="splide" role="group" aria-label="Exemple HTML de base de Splide">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide">
+                            <div class="font1">
+                                <h1>Bienvenue à l'Église de la Grâce</h1>
+                                <h2> « Communauté des Assemblées de Dieu du Congo »</h2>
+                                <h3>CADC</h3>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="font2">
+                                <h1>Bienvenue à l'Église de la Grâce</h1>
+                                <h2> « Communauté des Assemblées de Dieu du Congo »</h2>
+                                <h3>CADC</h3>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="font3">
+                                <h1>Bienvenue à l'Église de la Grâce</h1>
+                                <h2> « Communauté des Assemblées de Dieu du Congo »</h2>
+                                <h3>CADC</h3>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+      
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            perPage: 1,
+            focus: 'center',
+            start: 0,
+            pagination: true,
+            autoplay: true,
+            interval: 3000
+        });
+        splide.mount();
+    });
+</script>
+<script src="script.js"></script>
+
+</html>
