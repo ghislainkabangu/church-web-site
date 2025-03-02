@@ -140,14 +140,15 @@
 
     new Splide('#slider2', {
         type: 'loop',
-        perPage: 4,
+        perPage: 5,
         focus: 'center',
         start: 1,
         pagination: true,
         autoplay: true,
         interval: 5000,
         breakpoints: {
-            700: { perPage: 2}
+            1000: { perPage: 3},
+            700: { perPage: 1},
         },
         
     }).mount();
