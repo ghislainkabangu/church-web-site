@@ -34,9 +34,10 @@ html {
             }
 
             a:hover {
-                border-bottom: 2px solid white;
+                border-bottom: 2px solid #ffce00;
                 font-weight: bold;
                 letter-spacing: 2px;
+                color: #ffce00;
                 transition: 0.5s;
             }
         }
@@ -179,7 +180,7 @@ article {
     }
 
     p {
-        color: rgba(237, 187, 7, 0.648);
+        color: #ffce00;
         font-size: 18px;
     }
 }
@@ -216,7 +217,41 @@ aside {
         padding-top: 10px;
     }
 }
-
+/*************************footer**********************/
+footer{
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+    padding: 2px;
+    font-weight: 500px;
+    .footerBox{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        div{
+            flex-basis: 40%;
+            h4{
+                font-size: 30px;
+                text-transform: uppercase;
+                color: #ffce00;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            a:hover{
+                letter-spacing: 2px;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+.copy{
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: small;
+}
 @media screen and (max-width:700px) {
     .navigation_desktop {
         display: none;
@@ -275,4 +310,12 @@ aside {
         margin-top: 50px;
         width: 85%;
     }
+    footer{
+        margin-top: 50px;
+        .footerBox div{
+                flex-basis: 85%;
+               
+            }
+        }
+    
 }
