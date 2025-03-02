@@ -134,7 +134,8 @@ main {
     div {
         width: 80%;
         margin: auto;
-        h4{
+
+        h4 {
             font-size: 30px;
         }
     }
@@ -152,35 +153,40 @@ main {
 section {
     text-align: center;
     margin-top: 100px;
+
     img {
         width: 90%;
         object-fit: cover;
         height: 300px;
         cursor: pointer;
     }
-    img:hover{
+
+    img:hover {
         width: 95%;
         transition: 0.5s;
     }
 }
+
 /***********************artcle*********************************/
-article{
-    margin:auto;
+article {
+    margin: auto;
     width: 80%;
     margin-top: 100px;
     font-weight: 300;
-    h4{
+
+    h4 {
         font-size: 30px;
     }
-    p{
-        color:rgba(237, 187, 7, 0.648);
+
+    p {
+        color: rgba(237, 187, 7, 0.648);
         font-size: 18px;
     }
 }
+
 /*****************************evenement********************/
-.evenement{
+.evenement {
     margin-top: 100px;
-    margin-bottom: 500px;
     padding: 5px;
     text-align: center;
     background-image: url("https://images.unsplash.com/photo-1552587154-0291006dedbd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
@@ -189,10 +195,28 @@ article{
     background-repeat: no-repeat;
     color: white;
     font-weight: 300;
-    h4{
+
+    h4 {
         font-size: 100px;
     }
 }
+
+/*****************************aside*****************/
+aside {
+    margin: auto;
+    width: 80%;
+    margin-top: 100px;
+    font-weight: 300;
+
+    h4 {
+        font-size: 30px;
+    }
+
+    ul li {
+        padding-top: 10px;
+    }
+}
+
 @media screen and (max-width:700px) {
     .navigation_desktop {
         display: none;
@@ -233,15 +257,22 @@ article{
     section {
         margin-top: 50px;
     }
-    article{
+
+    article {
         margin-top: 50px;
         width: 85%;
     }
-    .evenement{
+
+    .evenement {
         margin-top: 50px;
-    
-    h4{
-        font-size: 50px;
+
+        h4 {
+            font-size: 50px;
+        }
     }
+
+    aside {
+        margin-top: 50px;
+        width: 85%;
     }
 }
