@@ -9,6 +9,11 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,7 +22,7 @@
         <nav class="navigation_desktop">
             <ul>
                 <li><a href="#">Accueil</a></li>
-                <li class="listItem"><a href="#">A propos</a></li>
+                <li class="listItem"><a href="#propos">A propos</a></li>
                 <li class="listItem"><a href="#">Services</a></li>
                 <li class="listItem"><a href="#">Programmes</a></li>
                 <li class="listItem"><a href="#">Contact</a></li>
@@ -29,7 +34,7 @@
             <ul>
                 <li><a href="#" class="closeMenu"><i class="fa-solid fa-xmark"></i></a></li>
                 <li><a href="#">Accueil</a></li>
-                <li><a href="#">A propos</a></li>
+                <li><a href="#propos">A propos</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Programmes</a></li>
                 <li><a href="#">Contact</a></li>
@@ -37,7 +42,7 @@
         </nav>
         <!-------------------------------->
         <div class="fondAccueil">
-            <div class="splide" role="group" aria-label="Exemple HTML de base de Splide">
+            <div class="splide" role="group" aria-label="Exemple HTML de base de Splide" id="slider1">
                 <div class="splide__track">
                     <div class="splide__list">
                         <div class="splide__slide">
@@ -68,24 +73,86 @@
             </div>
         </div>
     </header>
-    <main>
-      
+    <!---------------------apropos de l'église (main)--------------->
+    <main id="propos">
+        <div class="main">
+            <h4>A propos de nous :</h4>
+            <p>L'Église de la Grâce est une communauté de foi dévouée à la louange et à l'adoration de Dieu. Fondée sur
+                les principes bibliques, notre église s'efforce de créer un environnement accueillant où chaque personne
+                peut approfondir sa relation avec Christ. Nous croyons fermement que l'amour de Dieu transcende toutes
+                les barrières et que notre mission est de partager cette amour avec tous ceux que nous rencontrons.
+            </p>
+            <p>Notre église propose une variété de programmes et de services conçus pour enrichir la vie spirituelle de
+                nos membres. Des cultes vibrants et inspirants aux études bibliques approfondies, nous offrons des
+                opportunités pour que chacun puisse grandir dans sa foi. Nous accordons également une grande importance
+                à l'engagement communautaire et à l'aide aux plus démunis, en organisant régulièrement des actions
+                caritatives et des événements de soutien.
+            </p>
+            <p>À l'Église de la Grâce, nous croyons en la puissance de la prière et de la communion fraternelle. Nous
+                sommes plus qu'une simple assemblée; nous sommes une famille unie par la foi et le désir de servir notre
+                prochain. Que vous soyez un nouveau croyant ou un fidèle de longue date, vous trouverez chez nous un
+                foyer spirituel où vous pourrez grandir, vous épanouir et partager l'amour de Dieu.
+            </p>
+        </div>
     </main>
+    <!--------------section----------------->
+    <section class="splide" aria-label="Splide Basic HTML Example" id="slider2">
+        <div class="splide__track">
+            <div class="splide__list">
+                <div class="splide__slide">
+                    <img src="https://i.pinimg.com/736x/e1/09/bb/e109bbf92b0b8eff2ba55f5e934b3994.jpg" alt="">
+                </div>
+                <div class="splide__slide">
+                    <img src="https://i.pinimg.com/736x/5c/1c/54/5c1c542351d416bcb92211b49cf28846.jpg" alt="">
+                </div>
+                <div class="splide__slide">
+                    <img src="https://i.pinimg.com/736x/76/fb/25/76fb2547f07055ec59dc69142af55fad.jpg" alt="">
+                </div>
+                <div class="splide__slide">
+                    <img src="https://i.pinimg.com/736x/fe/93/07/fe9307c3da391cb5c65694064295b827.jpg" alt="">
+                </div>
+                <div class="splide__slide">
+                    <img src="https://i.pinimg.com/736x/c5/f4/5f/c5f45f779a99387f310eb6d2d6964cad.jpg" alt="">
+                </div>
+                <div class="splide__slide">
+                    <img src="https://i.pinimg.com/736x/3e/07/27/3e072729b239202e4f01a4be597570b0.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var splide = new Splide('.splide', {
-            type: 'loop',
-            perPage: 1,
-            focus: 'center',
-            start: 0,
-            pagination: true,
-            autoplay: true,
-            interval: 3000
-        });
-        splide.mount();
-    });
+    new Splide('#slider1', {
+        type: 'loop',
+        perPage: 1,
+        focus: 'center',
+        start: 0,
+        pagination: true,
+        autoplay: true,
+        interval: 3000,
+        breakpoints: {
+            700: { pagination: false }
+        },
+    }).mount();
+
+
+    new Splide('#slider2', {
+        type: 'loop',
+        perPage: 4,
+        focus: 'center',
+        start: 1,
+        pagination: true,
+        autoplay: true,
+        interval: 5000,
+        breakpoints: {
+            700: { perPage: 2}
+        },
+        
+    }).mount();
+
+    new Splide('#slider3').mount();
 </script>
 <script src="script.js"></script>
 
