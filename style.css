@@ -217,41 +217,62 @@ aside {
         padding-top: 10px;
     }
 }
+
 /*************************footer**********************/
-footer{
+footer {
     margin-top: 100px;
     background-color: black;
     color: white;
     padding: 2px;
     font-weight: 500px;
-    .footerBox{
+
+    .footerBox {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        div{
+
+        div {
             flex-basis: 40%;
-            h4{
+
+            h4 {
                 font-size: 30px;
                 text-transform: uppercase;
                 color: #ffce00;
             }
-            a{
+
+            a {
                 text-decoration: none;
                 color: white;
             }
-            a:hover{
+
+            a:hover {
                 letter-spacing: 2px;
                 transition: 0.5s;
             }
         }
+
+        ul {
+            list-style-type: none;
+            position: relative;
+            right: 60px;
+
+            li {
+                display: inline-block;
+                padding: 20px
+            }
+
+            ;
+        }
     }
 }
-.copy{
+
+.copy {
     margin-top: 10px;
     padding: 5px;
     text-align: center;
     font-size: small;
 }
+
 @media screen and (max-width:700px) {
     .navigation_desktop {
         display: none;
@@ -310,12 +331,14 @@ footer{
         margin-top: 50px;
         width: 85%;
     }
-    footer{
+
+    footer {
         margin-top: 50px;
-        .footerBox div{
-                flex-basis: 85%;
-               
-            }
+
+        .footerBox div {
+            flex-basis: 85%;
+
         }
-    
+    }
+
 }
