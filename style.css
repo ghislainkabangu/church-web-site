@@ -177,7 +177,22 @@ article{
         font-size: 18px;
     }
 }
-
+/*****************************evenement********************/
+.evenement{
+    margin-top: 100px;
+    margin-bottom: 500px;
+    padding: 5px;
+    text-align: center;
+    background-image: url("https://images.unsplash.com/photo-1552587154-0291006dedbd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: 300;
+    h4{
+        font-size: 100px;
+    }
+}
 @media screen and (max-width:700px) {
     .navigation_desktop {
         display: none;
@@ -221,5 +236,12 @@ article{
     article{
         margin-top: 50px;
         width: 85%;
+    }
+    .evenement{
+        margin-top: 50px;
+    
+    h4{
+        font-size: 50px;
+    }
     }
 }
