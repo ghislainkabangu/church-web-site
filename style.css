@@ -234,7 +234,8 @@ footer {
         div {
             flex-basis: 40%;
 
-            h4 {
+            h4,
+            h1 {
                 font-size: 30px;
                 text-transform: uppercase;
                 color: #ffce00;
